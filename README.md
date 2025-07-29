@@ -3,7 +3,8 @@
 
 A connected, intelligent smart home prototype designed to autonomously manage water, air, and energy resources using embedded electronics, smart sensors, and a web-based control interface.
 
-🌐 **Try the live demo**:👉  [Click here](https://lnkd.in/er8Zgthc)
+🌐 📱 Interface Link: https://lnkd.in/eiwEQaQR
+🏠 3D House Model: https://lnkd.in/e34VZ7Zz
 
 ---
 
