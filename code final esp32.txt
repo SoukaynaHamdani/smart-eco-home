@@ -171,19 +171,20 @@ void loop() {
 void controlWindow(bool gasDetected, bool rainDetected, float temperature) {
   // === Automatic window control with priorities ===
   if (gasDetected) {
-    Serial.println("⚠️ Gas detected - Priority 1 → Window OPEN");
+    Serial.println("  Gas detected - Priority 1 → Window OPEN");
     servoFenetre.write(0);  // Open window
   }
   else if (rainDetected) {
-    Serial.println("🌧 Rain detected - Priority 2 → Window CLOSED");
+    Serial.println("  Rain detected - Priority 2 → Window CLOSED");
     servoFenetre.write(90);   // Close window
   }
   else if (temperature > SEUIL_TEMP) {
-    Serial.println("🌡 High temperature - Priority 3 → Window OPEN");
+    Serial.println("  High temperature - Priority 3 → Window OPEN");
     servoFenetre.write(0);  // Open window
   }
   else {
-    Serial.println("🌡 Normal temperature → Window CLOSED");
+    Serial.println("  Normal temperature → Window CLOSED");
     servoFenetre.write(90);   // Close window
   }
+
 }
