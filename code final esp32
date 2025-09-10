@@ -188,3 +188,4 @@ void controlWindow(bool gasDetected, bool rainDetected, float temperature) {
   }
 
 }
+
